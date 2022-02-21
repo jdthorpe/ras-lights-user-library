@@ -26,9 +26,6 @@ module.exports = {
         new ModuleFederationPlugin({
             name: "user",
             filename: "remoteEntry.js",
-            // remotes: {
-            //     host: "host@/remoteEntry.js",
-            // },
             library: { type: "var", name: "user" },
             exposes: {
                 "./lib": "./bootstrap",
